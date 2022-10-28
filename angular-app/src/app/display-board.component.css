@@ -1,0 +1,11 @@
+.display-board {
+  width: 100%;
+  background-color: rgb(63, 120, 178);
+  padding: 5%;
+}
+
+.number {
+  color: black;
+  font-size: 75px;
+  text-align: center;
+}
