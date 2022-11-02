@@ -1,7 +1,7 @@
 version: '3'
 services:
   nodejs-server:
-    # image: rajithamk/angular-express-api
+    image: rajithamk/angular-express-api
     build:
       context: ./express-api
       dockerfile: Dockerfile
@@ -12,7 +12,7 @@ services:
        - ./express-api:/usr/src/app/express-api
        - /usr/src/app/express-api/node_modules
   angular-ui:
-    # image: rajithamk/angular-app
+    image: rajithamk/angular-app
     build:
       context: ./angular-app
       dockerfile: Dockerfile
