@@ -6,6 +6,8 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN sudo chown -R 1000660000:0 "/.npm"
+
 EXPOSE 8080
 
 CMD ["npm", "start"]
